@@ -85,8 +85,10 @@ async function createServer(
   return { app, vite }
 }
 
+
+
 createServer().then(({ app }) =>
-  app.listen(80, () => {
-    console.log('server started.')
+  app.listen(process.env.PORT, () => {
+    console.log(`server started at ${process.env.PORT}.`)
   })
 )
