@@ -86,7 +86,7 @@ async function createServer(
 }
 
 createServer().then(({ app }) =>
-  app.listen(8080, () => {
+  app.listen(80, () => {
     console.log('server started.')
   })
 )
